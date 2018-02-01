@@ -1,0 +1,23 @@
+body{
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#colorpad{
+	height:100%; 
+	width:100%; 
+	position: fixed; 
+	transition: background-color 2s linear;
+}
+
+#block{
+	width: 228px; 
+	height: 228px; 
+	position: fixed; 
+	top: 50%; 
+	left: 50%; 
+	margin: -114px 0 0 -114px;
+	background: url(../img/ni.svg);
+}
