@@ -1,1 +1,0 @@
-# nekita6.github.io
