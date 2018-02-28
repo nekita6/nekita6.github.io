@@ -29,7 +29,15 @@ table{ width: 100%; border-spacing: 0; }
 	background: #fffcfc; 
 }
 
-#header a{ margin-left: 22px; display: inline-block; height: 79px; line-height: 79px;}
+#header td:nth-child(2n+1){
+	width: 400px;
+}
+
+#header a{ 
+	margin-left: 22px; 
+	display: inline-block; 
+	height: 79px; 
+	line-height: 80px;}
 #header a:hover{ border-bottom: 1px solid #17151c; }
 
 #right{
@@ -39,11 +47,21 @@ table{ width: 100%; border-spacing: 0; }
 }
 
 #header_logo{
-	margin: auto; 	
-	display: block;
+	margin: auto; 		
 	height: 44px;
 	width: 44px;
-	background: url(../img/logo.svg);
+	background: url(../img/logo.svg) no-repeat;
+}
+
+#header_logo a{
+	display: block;
+    text-align: center; 
+    height: 100%;
+    margin-left: 0;
+}
+
+#header_logo a:hover{
+	border: none;
 }
 
 #title{
