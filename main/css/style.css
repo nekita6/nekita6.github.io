@@ -1,0 +1,169 @@
+*{
+	margin: 0; 
+	padding: 0; 
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	height: 100vh;
+	color: #17151c;
+}
+
+h1{
+	font-size: 1.2em; 
+	font-weight: lighter; 
+	font-style: normal; 
+}
+
+h2{
+	font-size: 1.2em; 
+	font-style: normal; 
+}
+
+h3{
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+p{
+	line-height: 1.6; 
+	font-style: italic; 
+}
+
+a{
+	text-decoration: none;
+	font-style: normal; 
+	color: #17151c; 
+}
+
+pre{
+	font-style: normal; 
+	font-size: 18px; 
+}
+
+h2{
+	font-size: .8em;
+	color: #000;
+	font-weight: lighter;
+}
+
+#header{
+	background-color: #fcedf6;
+	height: 20vh;
+	width: 100%;
+}
+
+#header a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;	
+	float: left;
+	overflow: hidden;
+	height: 100%;
+	width: calc(100%/7);
+	transition: all 0.5s;
+}
+
+#header a h2{
+	font-size: 1em; 
+	display: none;
+	opacity: 0;
+}
+
+#header a:hover{
+	width: calc(100%/7);
+	box-shadow: 0 0 80px rgba(0,0,0,0.21);
+}
+
+#header a:hover h1{
+	display: none;
+	opacity: 0;
+}
+
+#header a:hover h2{
+	display: block;
+	opacity: 1;
+}
+
+
+#header_logo{
+	background-repeat: no-repeat;
+	background-image: url(../img/ni.svg);
+	background-position: center;
+}
+
+#main{
+	height: 80vh;
+	background-color: #fcedf6;
+}
+
+#main div{
+	width: calc(100%/7);
+	height: calc(80vh/3);
+	line-height: calc(80vh/3);
+	float: left;
+	text-align: center;
+	transition: all 0.5s;
+}
+
+#main div:hover{
+	box-shadow: 0 0 80px rgba(0,0,0,0.21);
+	z-index: 1;
+}
+
+#main div:hover h3{
+	font-size: 1.2em;
+}
+
+#main div h3{
+	
+}
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 620px) {
+	#header{
+		background-color: #fcedf6;
+		height: 100vh;
+		width: 100%;
+	}
+
+	#header a{
+		display: flex;
+		text-align: center;	
+		overflow: hidden;
+		height: calc(100vh/7);
+		width: 100%;
+		transition: all 0.5s;		
+	}
+	
+	#header a:hover{
+		width: 100%;
+	}
+
+	#header a h1{
+		display: none;
+		opacity: 0;
+	}
+
+	#header a h2{
+		display: block;
+		opacity: 1;
+	}
+
+	#main{
+		height: 100vh;
+		background-color: #fcedf6;
+	}
+
+	#main div{
+		width: calc(100%/3);
+		height: calc(100vh/7);
+		line-height: calc(100vh/7);
+		float: left;
+		text-align: center;
+		transition: all 0.5s;
+	}
+}
+ 
