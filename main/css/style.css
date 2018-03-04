@@ -16,17 +16,14 @@ h1{
 
 h2{
 	font-size: 1.2em; 
+	font-weight: lighter; 
 	font-style: normal; 
 }
 
 h3{
-	font-weight: normal; 
+	font-size: 1.2em; 
+	font-weight: lighter; 
 	font-style: normal; 
-}
-
-p{
-	line-height: 1.6; 
-	font-style: italic; 
 }
 
 a{
@@ -35,16 +32,6 @@ a{
 	color: #17151c; 
 }
 
-pre{
-	font-style: normal; 
-	font-size: 18px; 
-}
-
-h2{
-	font-size: .8em;
-	color: #000;
-	font-weight: lighter;
-}
 
 #header{
 	background-color: #fcedf6;
@@ -53,37 +40,34 @@ h2{
 }
 
 #header a{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	text-align: center;	
-	float: left;
-	overflow: hidden;
 	height: 100%;
 	width: calc(100%/7);
+	line-height: 20vh;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	text-align: center;	
 	transition: all 0.5s;
+	z-index: 0;
 }
 
 #header a h2{
 	font-size: 1em; 
 	display: none;
-	opacity: 0;
 }
 
 #header a:hover{
+	z-index: 1;
 	width: calc(100%/7);
 	box-shadow: 0 0 80px rgba(0,0,0,0.21);
 }
 
 #header a:hover h1{
 	display: none;
-	opacity: 0;
 }
 
 #header a:hover h2{
 	display: block;
-	opacity: 1;
 }
 
 
@@ -99,42 +83,36 @@ h2{
 }
 
 #main div{
+	position: relative;
 	width: calc(100%/7);
 	height: calc(80vh/3);
 	line-height: calc(80vh/3);
 	float: left;
 	text-align: center;
 	transition: all 0.5s;
+	z-index: 0;
 }
 
 #main div:hover{
-	box-shadow: 0 0 80px rgba(0,0,0,0.21);
+	box-shadow: 0 0 80px rgba(0,0,0,.21);
 	z-index: 1;
 }
 
 #main div:hover h3{
-	font-size: 1.2em;
-}
-
-#main div h3{
-	
+	font-size: 1.6em;
 }
 
 @media only screen
-and (max-width : 620px) {
+and (max-width : 768px) {
 	#header{
-		background-color: #fcedf6;
 		height: 100vh;
 		width: 100%;
 	}
 
 	#header a{
-		display: flex;
-		text-align: center;	
-		overflow: hidden;
+		line-height: calc(100vh/7);
 		height: calc(100vh/7);
 		width: 100%;
-		transition: all 0.5s;		
 	}
 	
 	#header a:hover{
@@ -143,7 +121,6 @@ and (max-width : 620px) {
 
 	#header a h1{
 		display: none;
-		opacity: 0;
 	}
 
 	#header a h2{
@@ -153,15 +130,12 @@ and (max-width : 620px) {
 
 	#main{
 		height: 100vh;
-		background-color: #fcedf6;
 	}
 
 	#main div{
 		width: calc(100%/3);
 		height: calc(100vh/7);
 		line-height: calc(100vh/7);
-		float: left;
-		text-align: center;
 		transition: all 0.5s;
 	}
 }
