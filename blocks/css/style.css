@@ -94,10 +94,6 @@ svg{
 	box-shadow: none;
 }
 
-.cls-2{
-	opacity:0.07;
-}
-
 #header #contact_text{
 	float: right;
 	margin-right: 28px;
@@ -258,19 +254,6 @@ svg{
 	opacity: 1; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .title{
 	width: 100%;
 	height: 50px;
@@ -313,15 +296,6 @@ svg{
 	height: 196px;
 	background: url(../img/about/1703.png) no-repeat center center;
 }
-
-
-
-
-
-
-
-
-
 
 #nav{
 	width: 100%;
@@ -400,11 +374,6 @@ svg{
 	transform: scale(1); 
 }
 
-
-
-
-
-
 .skill{
 	padding-top: 24px;
 	height: 480px;
@@ -455,11 +424,6 @@ svg{
 	background: url(../img/skills/logo.png) no-repeat;
 	background-position: center center;
 }
-
-
-
-
-
 
 .container_flex{
 	display: flex;
@@ -524,10 +488,6 @@ textarea{
 #msg_btn:hover{ 
 	box-shadow: 0 6px 26px rgba(253, 29, 66, .48); 
 }
-
-
-
-
 
 .dark_footer{
 	background: #17151C;
@@ -627,11 +587,19 @@ textarea{
 #mym4 div{
 	padding: 11vh;
 }
-
-
+@media (max-width : 1024px){
+	.content{ 
+		width: 680px; 
+		min-height: auto; 
+		position: relative; 
+	}
+	.work{ 
+		margin: 24px 10px 0 10px;
+		float: left;
+	}
+}
 
 @media (max-width: 960px){
-	
 	#header a{
 		margin-left: 0;
 	}
@@ -681,7 +649,40 @@ textarea{
 		height: 116px;
 		margin-top: 8px 
 	}
+}
 
+
+@media (max-width : 768px){
+	.content{ 
+		width: 100%; 
+	}
+	.work{ 
+		display: block; 
+		float: none; 
+		margin: 24px auto;
+	}
+
+
+	#for_music a:nth-child(9){
+		display: block;
+		height: 100vh;
+		width: 100%;
+	}
+
+	#for_music{
+		display: block;
+	}
+
+	#for_music a{
+		display: none;
+	}
+
+	#mym,
+	#mym2,
+	#mym3,
+	#mym4{
+		height: calc(50vh - 53px);
+	}
 }
 
 @media (max-width: 740px){
@@ -731,10 +732,6 @@ textarea{
 	.news h3{ 
 		float: none; 
 		margin: 8px 0 0 16px;
-	}
-
-	#footer{
-	/*	padding-top: 0;*/
 	}
 
 	.skill{
@@ -799,50 +796,5 @@ textarea{
 	}
 }
 
-/*FOR WORKS*/
-@media (max-width : 1024px){
-	.content{ 
-		width: 680px; 
-		min-height: auto; 
-		position: relative; 
-	}
-	.work{ 
-		margin: 24px 10px 0 10px;
-		float: left;
-	}
-}
-
-@media (max-width : 768px){
-	.content{ 
-		width: 100%; 
-	}
-	.work{ 
-		display: block; 
-		float: none; 
-		margin: 24px auto;
-	}
-
-
-	#for_music a:nth-child(9){
-		display: block;
-		height: 100vh;
-		width: 100%;
-	}
-
-	#for_music{
-		display: block;
-	}
-
-	#for_music a{
-		display: none;
-	}
-
-	#mym,
-	#mym2,
-	#mym3,
-	#mym4{
-		height: calc(50vh - 53px);
-	}
-}
 
 
