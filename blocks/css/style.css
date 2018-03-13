@@ -538,28 +538,95 @@ textarea{
 }
 
 #for_music{
-	display: flex;
-	flex-flow: row wrap;
+	display: grid;
+ 	grid-template-columns: auto auto auto auto auto auto;
 	width: 100%;
 	height: calc(100vh - 106px);
 	background: #17151C;
 	color: #fffcfc;
 }
 
-#for_music .artist{
-	display: block;
-	width: calc(100%/6);
-	height: calc(25vh - 45px);
-	background: pink;
+#for_music a{
+	background: #17151C;
 	overflow: hidden;
+	transition: all 0.5s ease;
+	opacity: .1;
+	cursor: none;
 }
 
-#for_music .artist img{
+#for_music a:hover{
+	opacity: .5;
+}
+
+#for_music a img{
 	width: 100%;
+	height: auto;
+}	
+
+#for_music a:nth-child(8){
+	grid-row-start: 2;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 3;
 }
 
+#for_music a:nth-child(9){
+	grid-row-start: 2;
+	grid-row-end: 4;
+	grid-column-start: 3;
+	grid-column-end: 5;
+	background: linear-gradient(-75deg, #fd1d42, #fd6342);
+	color: #fff;
+	font-size: 6vh;
+	line-height: 5vh;
+	font-weight: bold;
+	opacity: 1;
+}
 
+#for_music a:nth-child(10){
+	grid-row-start: 2;
+	grid-row-end: 4;
+	grid-column-start: 5;
+	grid-column-end: 6;
+}
 
+#for_music a:nth-child(9):hover{
+	opacity: 1;
+}
+
+#mym,
+#mym2,
+#mym3,
+#mym4{
+	width: calc(100%/2);
+	height: 22vh;
+	display: inline-block;
+	float: left;
+}
+
+#mym3,
+#mym2{
+	background: #fff;
+	opacity: .1;
+}
+
+#mym4{
+	background: rgba(255, 255, 255, .2);
+	text-align: right;
+	color: rgba(255, 255, 255, .08);
+}
+
+#mym4:hover{
+	color: rgba(255, 255, 255, .16);
+}
+
+#mym div{
+	padding: 3vh;
+}
+
+#mym4 div{
+	padding: 11vh;
+}
 
 
 
@@ -753,6 +820,28 @@ textarea{
 		display: block; 
 		float: none; 
 		margin: 24px auto;
+	}
+
+
+	#for_music a:nth-child(9){
+		display: block;
+		height: 100vh;
+		width: 100%;
+	}
+
+	#for_music{
+		display: block;
+	}
+
+	#for_music a{
+		display: none;
+	}
+
+	#mym,
+	#mym2,
+	#mym3,
+	#mym4{
+		height: calc(50vh - 53px);
 	}
 }
 
